@@ -8,7 +8,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="scripts/parallax.js-1.5.0/parallax.min.js"></script>
   <link rel="icon" href="img/frogoutline.jpg" type="image/x-icon">
-	
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">	
+
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/main.css">
@@ -17,7 +18,7 @@
 <body>
   <nav class="navbar navbar-default fixed-top">
     
-      <a href="#aboutMe">About Me</a>
+      <a id="home" href="#aboutMe">About Me</a>
       <a href="#experience">Experience</a>
       <a href="#publications">Publications</a>
       <a href="#presentations">Presentations</a>
@@ -29,14 +30,15 @@
 	<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="img/parallax-bg/home-bg-2.jpg">
 		<h1 class="name" style="padding-bottom: 20px; font-size: 60px;">Bradley T. Martin</h1>
 
-            <h2 class="name" style="font-size: 30px;">Researcher &amp;<br> Aspiring Programmer</h2>
+            <h2 class="name" style="font-size: 30px;">Researcher <!--&amp;<br> Aspiring Programmer-Add github and programming blurbs--></h2>
 	</div>
 	
   <div id="body">
     <div id="aboutMe" class="section">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-7">
+			  <h1 id="homeName" style="display:none;">Bradley Martin, <small>Ph.D. Candidate</small></h1>
              <h2>Education</h2>
         <h4>University of Arkansas - Fayetteville, AR</h4>
         <p><strong>Ph.D.</strong> (<em>in progress</em>) Biological Sciences. Dissertation: <em>A North American Perspective on the Ecological and Evolutionary Underpinnings of Hybrid Zone Dynamics</em></p>
@@ -45,7 +47,14 @@
         <p><strong>M.S.</strong> 2012- Biology. Thesis: <em>Molecular Phylogenetics and Phylogeography of the American Box Turtles</em> (Terrapene <em>spp.</em>)</p>
         <p><strong>B.S.</strong> 2009- Biology. Graduated Cum Laude</p>
           </div>
-          <div class="col-md-4">
+			<div class="col-2" style="text-align:center;">
+				
+				<a href="https://github.com/btmartin721" target="_blank" title="Github"><i class="fab fa-github-square fa-3x"></i></a>
+				<a href="https://twitter.com/evobio721" target="_blank" title="Twitter"><i class="fab fa-twitter-square fa-3x"></i></a>
+				<a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-3x"></i></a>
+					
+			</div>
+          <div class="col-md-3">
             <img id="profile" src="img/profile.jpg" alt="picture of Bradley Martin" title="hello" height="350px">
           </div>
         </div>
@@ -67,16 +76,21 @@
 		<h2>Professional Experience</h2>
 			<div class="container-fluid">
 				<div class="row">
-			  		<p class="col-4" style="font-size: 14pt; text-align:left"><strong>University of Arkansas</strong></p>
-			 		<p class="col-4" style="font-size: 14pt; text-align:center"><strong>Fayetteville, AR</strong></p>
-			 		<p class="col-4" style="font-size: 14pt; text-align:right"><strong>August 2012 - present</strong></p>
+			  		<div class="col-5">
+						<p ><strong style="font-size: 18pt;">University of Arkansas</strong><br/>Fayetteville, AR</p>
+						<p></p>
+					</div>
+					<div class="col-7">
+						<p><strong>August 2012 - present</strong></p>
+					</div>
 				</div>	
 				<div class="row">
-				  	<div class="col-6">
-					  	<p><span style="font-size: 14pt; text-align:left"><strong>Graduate Teaching Assistant</strong></span><br/>Department of Biological Sciences</p>
+				  	<div class="col-5">
+						<p><strong>Graduate Teaching Assistant</strong><br>Department of Biological Sciences</p> 
+						<p></p>
 					</div>
-					<div class="col-6">
-			 			<p style="font-size: 14pt; text-align:left">Courses Taught:</p>
+					<div class="col-7">
+			 			<p>Courses Taught:</p>
 					 		 <ul>
 								<li>Principles of Biology Lecture. Semesters taught: 4</li>
 								<li>Principles of Biology Lab. Semesters taught: 3</li>
@@ -87,23 +101,34 @@
 					</div>	 
 				</div> 	
 				<div class="row">
-					<div class="col-6">
+					<div class="col-5">
 						<p><strong>Graduate Research Assistant</strong><br/>Department of Biological Sciences</p>
 						<p>May 2016 - August 2016;<br>May 2017 - August 2017;<br>May 2018 - August 2018</p>
 					</div>
-					<div class="col-6">
+					<div class="col-7">
 						 <p>Projects Worked on:</p>
+							<ul>
+								<li>Assessing hybridization and introgression in <em>Sistrurus catenatus, S. tergeminus tergeminus, </em>and <em>S. t. edwardsii</em></li>
+								<li>Investigated the population structure of certain fish species to determine the sources of invasive populations</li>
+								<li>Extracted genomic DNA from tissues of ~500 Arkansas white-tail deer individuals with the goal of generating Sanger and Next-generation sequencing data and, importantly, data to limit the spread of chronic wasting disease (CWD).</li>
+							</ul>
 					</div>	
-				</div>	
-			  	<div class="row">
-					<div class="col-4"><h3>University of Texas</h3></div>
-					<div class="col-4"><p>Tyler, Texas</p></div>
-					<div class="col-4"><p>August 2010 - May 2012</p></div>
 				</div>
 				<div class="row">
-					<div class="col-6"><p><strong>Graduate Teaching Assistant</strong><br/>Department of Biology</p></div>
-					<div class="col-6">
-						<p>Course Taught:</p>
+			  		<div class="col-5">
+						<p ><strong style="font-size: 18pt;">University of Texas</strong><br/>Tyler, Texas</p>
+						<p></p>
+					</div>
+					<div class="col-7">
+						<p><strong>August 2010 - May 2012</strong></p>
+					</div>
+				</div>	
+			  	<div class="row">
+					<div class="col-5"><p><strong>Graduate Teaching Assistant</strong><br/>Department of Biology</p>
+					<p>August 2010 - May 2012</p>
+					</div>
+					<div class="col-7">
+						<p>Courses Taught:</p>
 						  <ul>
 							<li>General Biology I Lab. Semesters taught: 3</li>
 							<li>General Biology II Lab. Semesters taught: 1</li>
@@ -111,14 +136,16 @@
 					</div>	
 				</div>	
 			 	<div class="row"> 
-					<div class="col-6"><p><strong>Graduate Research Assistant</strong>, Deparment of Biology</p>
+					<div class="col-5"><p><strong>Graduate Research Assistant</strong><br>Deparment of Biology</p>
 			  <p>May 2011 - August 2011</p></div>
-					<div class="col-6">(For list of projects done for GRA at UT Tyler.</div>
+					<div class="col-7"><mark>(Info Needed: Projects done as Graduate RA at Tyler)</mark></div>
 				</div>
 			  	<div class="row">
-					<div class="col-6"><p><strong>Undergraduate Research Assistant</strong>, Department of Biology</p>
-			 		 <p>2009*</p></div>
-					<div class="col-6">(empty. space for projects as Undergraduate Research Assistant.)</div>	
+					<div class="col-5"><p><strong>Undergraduate Research Assistant</strong><br> Department of Biology</p>
+						<p><mark>(Info Needed: dates worked as undergrad RA)</mark></p>
+					</div>
+					<div class="col-7"><mark>(Info Needed: Projects done as Graduate RA at Tyler)</mark>
+					</div>	
 				</div>	   
 			</div>		
     </div>
@@ -128,7 +155,9 @@
 	</div>  
     <div id="publications" class="section">
       <h2>Peer-Reviewed Publications</h2>
-      <a class="btn btn-primary" role="button" href="https://scholar.google.com/citations?user=0IVAuBoAAAAJ&hl=en" target="_blank">Google Scholar</a>
+		<div class="space">
+      		<a class="btn btn-primary" role="button" href="https://scholar.google.com/citations?user=0IVAuBoAAAAJ&hl=en" target="_blank">Google Scholar</a>
+		</div>	
       <p>Tyler K Chafin, <strong>Bradley T Martin</strong>, Steven M Mussmann, Marlis R Douglas, Michael E Douglas.(2017). FRAGMATIC: in silico locus prediction and its utility in optimising ddRADseq projects. Conservation Genetics Resources (pp. 1-4).</p>
       <p><strong>Bradley T Martin</strong>, Neil P Bernstein, Roger D Birkhead, Jim F Koukl, Steven M Mussmann, JS Placyk. (2014). On the reclassification of the Terrapene (Testudines: Emydidae): a response to Fritz &amp; Havaš. Zootaxa (2: 292-294).</p>
       <p><strong>Bradley T Martin</strong>, Daniel D Goodding, Neil B Ford, John S Placyk Jr.(2013). Sensory Mediation of Foraging Behavior in the Western Lesser Siren (<em>Siren intermedia nettingi</em>). Journal of Herpetology. (1: 75-77).</p>
@@ -142,10 +171,11 @@
 	</div>
     <div id="presentations" class="section">
       <h2>Presentations</h2>
-		<button id="orals"class="btn btn-primary" role="button">Oral Presentations</button>
-		<button id="poster"class="btn btn-primary" role="button">Poster Presentations</button>
-		<button id="guest"class="btn btn-primary" role="button">Guest Lectures</button>
-		
+		<div class="space">
+			<button id="orals" class="btn btn-primary" role="button">Oral Presentations</button>
+			<button id="poster"class="btn btn-primary" role="button">Poster Presentations</button>
+			<button id="guest"class="btn btn-primary" role="button">Guest Lectures</button>
+		</div>
 		      
       <div id="oralPresentation" style="display:default">
         <h3>Oral Presentations</h3>

@@ -2,6 +2,10 @@
     color: #000;
     
 }
+
+h2{
+    padding-bottom: 20px;
+}
 .parallax{
     min-height:700px;
     background:transparent;
@@ -14,6 +18,10 @@
 nav{
     background-color:#fff;
     padding: 0px 60px 0px 60px;
+}
+
+.space{
+    padding: 20px 0px;
 }
 
 .name{

@@ -33,3 +33,7 @@ $('#guest').on('click', function() {
 $('#guest').on('click', function() {
     $('#posterPresentation').hide();
 })
+
+$('#home').on('click', function() {
+    $('#homeName').show();
+})
